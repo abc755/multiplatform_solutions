@@ -1,4 +1,4 @@
 // ignore: camel_case_types
-class platformViewRegistry {
+class PlatformViewRegistry {
   static registerViewFactory(String viewId, dynamic cb) {}
 }

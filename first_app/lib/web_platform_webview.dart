@@ -14,7 +14,7 @@ class WebViewWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final id = Random().nextInt.toString();
 
-    ui.platformViewRegistry.registerViewFactory(id, (int viewId) => IFrameElement()..src = url);
+    ui.PlatformViewRegistry.registerViewFactory(id, (int viewId) => IFrameElement()..src = url);
     
     return HtmlElementView(viewType: id);
   }
