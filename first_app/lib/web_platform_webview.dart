@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:html';
-import 'package:multiplatform_solutions/helpers/FakeUi.dart'
-  if (dart.library.html) 'package:multiplatform_solutions/helpers/RealUi.dart' as ui;
+import 'package:multiplatform_solutions/helpers/fake_ui.dart'
+  if (dart.library.html) 'package:multiplatform_solutions/helpers/real_ui.dart' as ui;
 import 'dart:math';
 
 Widget webView(String link) => WebViewWidget(url: link);
